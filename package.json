@@ -1,0 +1,9 @@
+{
+  "name": "p2p-sap-cap",
+  "dependencies": {
+    "@sap/cds": "^7"
+  },
+  "scripts": {
+    "start": "cds run"
+  }
+}
