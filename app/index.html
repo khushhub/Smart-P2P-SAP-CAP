@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart SAP P2P System</title>
 
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: linear-gradient(to right, #e3f2fd, #f4f6f8);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0a6ed1;
+            margin-top: 30px;
+        }
+
+        .container {
+            width: 70%;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            background-color: #0a6ed1;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0854a0;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Smart SAP P2P System</h1>
+
+<div class="container">
+
+    <button class="btn" onclick="submitPR()">Submit PR</button>
+    <button class="btn" onclick="approvePR()">Approve PR</button>
+    <button class="btn" onclick="createPO()">Create PO</button>
+    <button class="btn" onclick="sendPO()">Send PO</button>
+    <button class="btn" onclick="createGR()">Goods Receipt</button>
+    <button class="btn" onclick="createInvoice()">Create Invoice</button>
+    <button class="btn" onclick="makePayment()">Make Payment</button>
+
+    <div id="output">Click a button to start workflow</div>
+
+</div>
+
+<script>
+function show(msg){
+    document.getElementById("output").innerText = msg;
+}
+
+function submitPR(){
+    show("PR Submitted Successfully");
+}
+
+function approvePR(){
+    show("PR Approved by Manager");
+}
+
+function createPO(){
+    show("Purchase Order Created");
+}
+
+function sendPO(){
+    show("PO Sent to Vendor");
+}
+
+function createGR(){
+    show("Goods Received Successfully");
+}
+
+function createInvoice(){
+    show("Invoice Verified");
+}
+
+function makePayment(){
+    show("Payment Completed");
+}
+</script>
+
+</body>
+</html>
